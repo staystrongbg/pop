@@ -1,0 +1,74 @@
+@import 'variables';
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  background-color: $bodyBg;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  // font-size: 62px;
+  font-size: clamp(2rem, 8vw, 4rem);
+  font-weight: 300;
+  color: $textPrimary;
+}
+h3 {
+  font-size: clamp(1.5rem, 8vw, 3rem);
+  font-weight: 300;
+  color: $textPrimary;
+}
+p {
+  color: $textPrimary;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+#typedtext {
+  min-height: 60px;
+}
+
+.lightSabre {
+  color: $skyBlue;
+  animation: showHide 1s infinite;
+}
+
+@keyframes showHide {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 640px) {
+  #typedtext {
+    height: 140px;
+  }
+}

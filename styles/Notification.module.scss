@@ -1,0 +1,16 @@
+@import 'variables';
+.notification {
+  background-color: $skyBlue;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 7px 20px;
+  max-width: 50%;
+  position: absolute;
+  left: 60px;
+}
+
+@media (min-width: 640px) {
+  .notification {
+    padding: 20px 40px;
+  }
+}

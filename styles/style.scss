@@ -1,0 +1,60 @@
+//bg colors
+$navBg: #252931;
+$skyBlue:#2cc1db;
+$darkGray: #232529;
+$textPrimary: #fff;
+$border: #5d5d5d;
+$mainFont:'Roboto';
+$condensedFont:'Roboto Condensed';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.navbar{
+background-color: $navBg;
+padding: 10px 40px;
+color: $textPrimary;
+text-transform: uppercase;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-bottom: 1px solid $border;
+box-shadow: 2px 2px 6px #121212;
+}
+
+.navbar{
+    .links{
+        display: flex;
+        gap: 1.25rem;
+        font-family: $mainFont, sans-serif;
+        font-size: 1rem;
+        .lng{
+            margin:0 20px;
+            display: flex;
+            gap:1.25rem;
+        }
+    }
+}
+
+@media (min-width:960px) {
+    .mobile-menu{
+        display: none;
+    }
+}
+.hero{
+    background-image: url('/dist/images/nada-macura.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}

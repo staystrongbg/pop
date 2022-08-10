@@ -32,8 +32,8 @@
       li {
         display: flex;
         align-items: center;
-        cursor: pointer;
         height: 100%;
+        cursor: pointer;
       }
       li:first-child {
         border-bottom: 4px solid $skyBlue;
@@ -264,6 +264,9 @@
       align-items: center;
       justify-content: center;
       gap: 1rem;
+      .bullets {
+        transform: rotate(90deg);
+      }
       .refbg {
         position: absolute;
         z-index: -1;
@@ -537,6 +540,9 @@
     }
     .reference {
       .referenceDetails {
+        .bullets {
+          transform: rotate(0deg);
+        }
         .imgAndText {
           flex-direction: row;
         }

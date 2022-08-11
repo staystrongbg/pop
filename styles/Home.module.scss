@@ -251,9 +251,9 @@
   .cards {
     padding: 0 20px;
     display: grid;
-    width: 100%;
+    width: 98%;
     gap: 2rem;
-    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
   }
 
   .reference {
@@ -528,7 +528,7 @@
 @media only screen and (min-width: 960px) {
   .container {
     .cards {
-      grid-template-columns: repeat(2, minmax(200px, 1fr));
+      grid-template-columns: repeat(2, minmax(220px, 1fr));
     }
     .kategorije_1 {
       .sportIcons {

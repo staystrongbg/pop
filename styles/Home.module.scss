@@ -102,11 +102,12 @@
     height: 0;
     left: 0;
     z-index: 0;
-    border-top: 140px solid transparent;
-    border-bottom: 140px solid transparent;
+    border-top: 260px solid transparent;
+    border-bottom: 260px solid transparent;
     background-color: transparent;
-    border-left: 140px solid $whiteTriangle;
+    border-left: 260px solid $whiteTriangle;
     filter: drop-shadow(0 -100px 1500px rgb(44, 193, 219, 0.4));
+    display: none;
     .kockica {
       background-color: $skyBlue;
       width: 6rem;
@@ -129,6 +130,7 @@
     align-items: center;
     justify-content: center;
     gap: 10rem;
+    margin: 10rem 0 0 0;
     .sportIcons {
       display: grid;
       grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -253,7 +255,7 @@
     display: grid;
     width: 98%;
     gap: 2rem;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
   }
 
   .reference {
@@ -332,12 +334,20 @@
         .quotes1 {
           position: absolute;
           top: 50px;
-          left: -50px;
+          left: -20px;
+          width: 20px;
+          img {
+            width: 100%;
+          }
         }
         .quotes2 {
           position: absolute;
           right: 0;
           bottom: 30px;
+          width: 20px;
+          img {
+            width: 100%;
+          }
         }
         z-index: 12;
         display: flex;
@@ -439,7 +449,7 @@
   .blog {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
     margin: 10rem auto;
     h3 {
       margin: auto;
@@ -448,7 +458,7 @@
     .row1 {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       span {
         position: relative;
         p {
@@ -512,6 +522,10 @@
 .footer {
   flex-direction: column;
   position: relative;
+  .row1 {
+  }
+  .row2 {
+  }
 }
 @keyframes translateY {
   0% {
@@ -548,6 +562,15 @@
     }
     .reference {
       .referenceDetails {
+        .refDesc {
+          .quotes1 {
+            width: 30px;
+            left: -50px;
+          }
+          .quotes2 {
+            width: 30px;
+          }
+        }
         .bullets {
           transform: rotate(0deg);
         }
@@ -564,10 +587,14 @@
     display: none;
   }
   .container {
+    // .cards {
+    //   grid-template-columns: repeat(2, minmax(220px, 1fr));
+    // }
     .kategorije_2 {
       margin-bottom: 20px;
     }
     .triangle {
+      display: block;
     }
     .navbar {
       padding: 0 120px;
@@ -606,8 +633,11 @@
   }
   .slider {
     .blog {
+      width: 60%;
+
       .row1 {
         flex-direction: row;
+        align-items: center;
       }
       .row2 {
         flex-direction: row;

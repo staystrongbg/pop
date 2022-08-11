@@ -14,7 +14,6 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
 export default function Home() {
-  const [isMobile,setIsMobile]=useState(false);
   const cards = [
     {
       title: 'Lorem ipsum dolor sit amet, consectetur23 43',
@@ -49,7 +48,7 @@ export default function Home() {
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae exercitationem doloremque dolores reprehenderit? Mollitia eaque obcaecati',
     },
   ];
-
+  const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     // set up text to print, each item in array is new line
     var aText = new Array('Lorem Ipsum has', "been the industry's.");
@@ -137,7 +136,7 @@ export default function Home() {
         </section>
         <section className={styles.reference}>
           <Referenca />
-          <About />
+          <About isMobile={isMobile} setIsMobile={setIsMobile} />
         </section>
         <div className={styles.slider}>
           <div className={styles.whiteBg}>
@@ -178,7 +177,7 @@ export default function Home() {
           </div>
         </div>
         <Contact />
-        <Footer />
+        <Footer isMobile={isMobile} />
       </>
     </div>
   );

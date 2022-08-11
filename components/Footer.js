@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.scss';
-import Triangle from './Triangle';
 import { FaFacebookF } from 'react-icons/fa';
+import { mobile } from '../lib/media';
 const Footer = () => {
   const STYLES = {
     display: 'flex',
@@ -10,7 +10,6 @@ const Footer = () => {
   const LEFT = {
     flex: 1,
     display: 'flex',
-    // alignItems: 'center',
     justifyContent: 'flex-start',
     color: '#f8fdfe',
     padding: '20px 40px',
@@ -21,10 +20,8 @@ const Footer = () => {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
-    // alignItems: 'center',
     justifyContent: 'flex-start',
     gap: '1.5rem',
-
     justifyContent: 'flex-start',
     color: '#f8fdfe',
     padding: '20px 40px',
@@ -44,7 +41,12 @@ const Footer = () => {
           }}
         ></span>
 
-        <p style={{ whiteSpace: 'nowrap' }}>
+        <p
+          style={{
+            whiteSpace: 'nowrap',
+            fontSize: mobile ? '0.75rem' : '1rem',
+          }}
+        >
           Photography copyrights: <a href='#'>link</a> | <a href='#'>link</a>
         </p>
       </div>
@@ -56,6 +58,7 @@ const Footer = () => {
             alignItems: 'flex-end',
             whiteSpace: 'nowrap',
             justifyContent: 'space-between',
+            fontSize: mobile ? '0.75rem' : '1rem',
           }}
         >
           HOMEPAGE ABOUT SERVICES REFERENCES BLOG CONTACT
@@ -69,7 +72,13 @@ const Footer = () => {
             width: '100%',
           }}
         ></span>
-        <p>Design and development PopArt Studio</p>
+        <p
+          style={{
+            fontSize: mobile ? '0.75rem' : '1rem',
+          }}
+        >
+          Design and development PopArt Studio
+        </p>
       </div>
     </footer>
   );

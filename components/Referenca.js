@@ -15,7 +15,7 @@ const Referenca = () => {
         </span>
         <div className={styles.refDesc}>
           <h3>References</h3>
-          <p>
+          <p style={{ position: 'relative' }}>
             <span className={styles.quotes1}>
               <img src='/quote-1.png' alt='' />
             </span>

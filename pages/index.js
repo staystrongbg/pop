@@ -122,7 +122,7 @@ export default function Home() {
         </section>
         <section className={styles.moto}>
           <span className={styles.motoImage}>
-            <Image width={800} height={1000} src='/pehar.png' />
+            <Image width={800} height={1000} src='/pehar.png' priority />
           </span>
           <span className={styles.motoImage}>
             <img src='/4000kwp.png' />'

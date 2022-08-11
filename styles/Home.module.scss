@@ -68,7 +68,7 @@
       flex-direction: column;
       justify-content: space-between;
       padding-top: 200px;
-      width: 60%;
+      width: 80%;
       margin: auto;
       .heroText {
         text-align: center;
@@ -527,6 +527,11 @@
 
 @media only screen and (min-width: 960px) {
   .container {
+    .hero {
+      .heroTextContainer {
+        width: 60%;
+      }
+    }
     .cards {
       grid-template-columns: repeat(2, minmax(220px, 1fr));
     }

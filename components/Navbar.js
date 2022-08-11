@@ -1,9 +1,7 @@
 import styles from '../styles/Home.module.scss';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-const Navbar = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
+const Navbar = ({ isMobile, setIsMobile }) => {
   useEffect(() => {
     if (isMobile) {
       document.body.style = 'overflow:hidden';

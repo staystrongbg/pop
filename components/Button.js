@@ -8,7 +8,3 @@ const Button = ({ style, text }) => {
 };
 
 export default Button;
-
-<a className={styles.btnTransparent}>
-  <span>All services</span>
-</a>;

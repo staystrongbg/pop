@@ -3,13 +3,13 @@ import styles from '../styles/Home.module.scss';
 import Button from './Button';
 import Triangle from './Triangle';
 
-const About = () => {
+const About = ({ isMobile }) => {
   return (
     <article className={styles.referenceDetails}>
       <span className={styles.triangleLeft}>
         <Triangle />
       </span>
-      <div className={styles.imgAndText} style={{ width: '60%' }}>
+      <div className={styles.imgAndText}>
         <span className={styles.refImgContainer}>
           <Image
             src='/miss.png'

@@ -45,6 +45,7 @@
       display: flex;
       gap: 1.25rem;
       white-space: nowrap;
+      cursor: pointer;
       li:first-child {
         color: $grayedOut;
       }
@@ -60,6 +61,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100vw;
+    height: 100vh;
     .heroTextContainer {
       display: flex;
       flex-direction: column;
@@ -525,7 +528,7 @@
 @media only screen and (min-width: 960px) {
   .container {
     .cards {
-      grid-template-columns: repeat(2, minmax(220px, 1fr));
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
     }
     .kategorije_1 {
       .sportIcons {

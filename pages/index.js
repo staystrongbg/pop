@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 import Notification from '../components/Notification';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Sports from '../components/Sports';
 import Triangle from '../components/Triangle';
@@ -14,6 +14,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
 export default function Home() {
+  const [isMobile,setIsMobile]=useState(false);
   const cards = [
     {
       title: 'Lorem ipsum dolor sit amet, consectetur23 43',
